@@ -147,9 +147,9 @@
 			isa = PBXGroup;
 			children = (
 				08241F33205AF6DD00CCFD5B /* AppDelegate.swift */,
-				08241F46205AF78700CCFD5B /* Main.storyboard */,
 				08241F5C205AF8B200CCFD5B /* View Controllers */,
 				08241F48205AF85300CCFD5B /* Student.swift */,
+				08241F46205AF78700CCFD5B /* Main.storyboard */,
 				08241F2D205AF6DC00CCFD5B /* Faculty.swift */,
 				08241F32205AF6DD00CCFD5B /* StudentStore.swift */,
 				08241F2E205AF6DC00CCFD5B /* FacultyStore.swift */,
