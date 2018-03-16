@@ -15,7 +15,7 @@ class StudentsViewController: UIViewController, UITableViewDelegate, UISearchCon
     var studentStore = StudentStore()
     let searchController = UISearchController(searchResultsController: nil)
     let redColor = UIColor(red:0.82, green:0.07, blue:0.11, alpha:1.0)
-    let impactController = UIImpactFeedbackGenerator(style: .medium)
+    let impactController = UIImpactFeedbackGenerator(style: .light)
     
     // MARK: - @IBOutlets
     @IBOutlet var tableView: UITableView!
@@ -114,6 +114,7 @@ class StudentsViewController: UIViewController, UITableViewDelegate, UISearchCon
         self.tabBarController!.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
         
         self.tabBarController!.navigationItem.searchController = self.searchController
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

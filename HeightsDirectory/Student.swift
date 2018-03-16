@@ -65,7 +65,7 @@ class Student {
         let dadPhone = json["fatherPhone"] as! String
         let dadEmail = json["fatherEmail"] as! String
         let momPhone = json["motherPhone"] as! String
-        let momEmail = json["motherEMail"] as! String
+        let momEmail = json["motherEmail"] as! String
         let street = json["streetAddress"] as! String
         let city = json["cityAddress"] as! String
         

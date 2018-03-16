@@ -45,7 +45,6 @@ class StudentStore: NSObject, UITableViewDataSource {
     // MARK: - Variables
     var allStudents = [Student]()
     var shownStudents = [Student]()
-    var currentRefinement = StudentRefineOptions.none
     var currentSortment = StudentSortOptions.grade
     
     // MARK: - Functions
@@ -55,21 +54,7 @@ class StudentStore: NSObject, UITableViewDataSource {
         
         allStudents.append(newStudent)
         
-        // Check to see if the student should be shown
-        switch currentRefinement {
-        case .grade(let gradeNum):
-            if newStudent.grade == gradeNum {
-                shownStudents.append(newStudent)
-                return
-            }
-        case .zip(let zipCode):
-            if newStudent.zipCode == zipCode {
-                shownStudents.append(newStudent)
-                return
-            }
-        case .none:
-            shownStudents.append(newStudent)
-        }
+        shownStudents.append(newStudent)
         
         sortList(by: currentSortment)
     
@@ -80,21 +65,7 @@ class StudentStore: NSObject, UITableViewDataSource {
         
         allStudents.append(newStudent)
         
-        // Check to see if the student should be shown
-        switch currentRefinement {
-        case .grade(let gradeNum):
-            if newStudent.grade == gradeNum {
-                shownStudents.append(newStudent)
-                return
-            }
-        case .zip(let zipCode):
-            if newStudent.zipCode == zipCode {
-                shownStudents.append(newStudent)
-                return
-            }
-        case .none:
-            shownStudents.append(newStudent)
-        }
+        shownStudents.append(newStudent)
         
         sortList(by: currentSortment)
         
