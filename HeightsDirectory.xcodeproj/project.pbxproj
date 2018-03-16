@@ -1,0 +1,861 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08241F0F205AF67000CCFD5B /* HeightsDirectoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F0E205AF67000CCFD5B /* HeightsDirectoryTests.swift */; };
+		08241F1A205AF67000CCFD5B /* HeightsDirectoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F19205AF67000CCFD5B /* HeightsDirectoryUITests.swift */; };
+		08241F35205AF6DD00CCFD5B /* FacultyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F28205AF6DC00CCFD5B /* FacultyTableViewCell.swift */; };
+		08241F36205AF6DD00CCFD5B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08241F29205AF6DC00CCFD5B /* GoogleService-Info.plist */; };
+		08241F37205AF6DD00CCFD5B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08241F2A205AF6DC00CCFD5B /* Info.plist */; };
+		08241F3A205AF6DD00CCFD5B /* Faculty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F2D205AF6DC00CCFD5B /* Faculty.swift */; };
+		08241F3B205AF6DD00CCFD5B /* FacultyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F2E205AF6DC00CCFD5B /* FacultyStore.swift */; };
+		08241F3E205AF6DD00CCFD5B /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F31205AF6DD00CCFD5B /* StudentTableViewCell.swift */; };
+		08241F3F205AF6DD00CCFD5B /* StudentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F32205AF6DD00CCFD5B /* StudentStore.swift */; };
+		08241F40205AF6DD00CCFD5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F33205AF6DD00CCFD5B /* AppDelegate.swift */; };
+		08241F41205AF6DD00CCFD5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08241F34205AF6DD00CCFD5B /* Assets.xcassets */; };
+		08241F43205AF72100CCFD5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08241F42205AF72100CCFD5B /* LaunchScreen.storyboard */; };
+		08241F47205AF78800CCFD5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08241F46205AF78700CCFD5B /* Main.storyboard */; };
+		08241F49205AF85300CCFD5B /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F48205AF85300CCFD5B /* Student.swift */; };
+		08241F53205AF88B00CCFD5B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F4A205AF88A00CCFD5B /* SettingsViewController.swift */; };
+		08241F54205AF88B00CCFD5B /* FacultyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F4B205AF88A00CCFD5B /* FacultyDetailViewController.swift */; };
+		08241F55205AF88B00CCFD5B /* HandbookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F4C205AF88A00CCFD5B /* HandbookViewController.swift */; };
+		08241F56205AF88B00CCFD5B /* StudentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F4D205AF88A00CCFD5B /* StudentDetailViewController.swift */; };
+		08241F57205AF88B00CCFD5B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F4E205AF88A00CCFD5B /* SignUpViewController.swift */; };
+		08241F58205AF88B00CCFD5B /* PasswordResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F4F205AF88B00CCFD5B /* PasswordResetViewController.swift */; };
+		08241F59205AF88B00CCFD5B /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F50205AF88B00CCFD5B /* StudentsViewController.swift */; };
+		08241F5A205AF88B00CCFD5B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F51205AF88B00CCFD5B /* LoginViewController.swift */; };
+		08241F5B205AF88B00CCFD5B /* FacultyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F52205AF88B00CCFD5B /* FacultyViewController.swift */; };
+		2C1BFD1B7977D6404D0893E6 /* Pods_HeightsDirectory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8888EB86C18B69C5B36EFDFE /* Pods_HeightsDirectory.framework */; };
+		428279B0F43E90837958DA86 /* Pods_HeightsDirectoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7E2D4EA171AFD15001483B /* Pods_HeightsDirectoryTests.framework */; };
+		AD439491382EDF82CA635B42 /* Pods_HeightsDirectoryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAB0748A016F2FCDB7BB04A /* Pods_HeightsDirectoryUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08241F0B205AF67000CCFD5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08241EEE205AF66E00CCFD5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08241EF5205AF66E00CCFD5B;
+			remoteInfo = HeightsDirectory;
+		};
+		08241F16205AF67000CCFD5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08241EEE205AF66E00CCFD5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08241EF5205AF66E00CCFD5B;
+			remoteInfo = HeightsDirectory;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08241EF6205AF66E00CCFD5B /* HeightsDirectory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeightsDirectory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08241F0A205AF67000CCFD5B /* HeightsDirectoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeightsDirectoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08241F0E205AF67000CCFD5B /* HeightsDirectoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightsDirectoryTests.swift; sourceTree = "<group>"; };
+		08241F10205AF67000CCFD5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08241F15205AF67000CCFD5B /* HeightsDirectoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeightsDirectoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08241F19205AF67000CCFD5B /* HeightsDirectoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightsDirectoryUITests.swift; sourceTree = "<group>"; };
+		08241F1B205AF67000CCFD5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08241F28205AF6DC00CCFD5B /* FacultyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacultyTableViewCell.swift; sourceTree = "<group>"; };
+		08241F29205AF6DC00CCFD5B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		08241F2A205AF6DC00CCFD5B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08241F2D205AF6DC00CCFD5B /* Faculty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Faculty.swift; sourceTree = "<group>"; };
+		08241F2E205AF6DC00CCFD5B /* FacultyStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacultyStore.swift; sourceTree = "<group>"; };
+		08241F31205AF6DD00CCFD5B /* StudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		08241F32205AF6DD00CCFD5B /* StudentStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentStore.swift; sourceTree = "<group>"; };
+		08241F33205AF6DD00CCFD5B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		08241F34205AF6DD00CCFD5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08241F42205AF72100CCFD5B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08241F46205AF78700CCFD5B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		08241F48205AF85300CCFD5B /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		08241F4A205AF88A00CCFD5B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		08241F4B205AF88A00CCFD5B /* FacultyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacultyDetailViewController.swift; sourceTree = "<group>"; };
+		08241F4C205AF88A00CCFD5B /* HandbookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandbookViewController.swift; sourceTree = "<group>"; };
+		08241F4D205AF88A00CCFD5B /* StudentDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentDetailViewController.swift; sourceTree = "<group>"; };
+		08241F4E205AF88A00CCFD5B /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		08241F4F205AF88B00CCFD5B /* PasswordResetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordResetViewController.swift; sourceTree = "<group>"; };
+		08241F50205AF88B00CCFD5B /* StudentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
+		08241F51205AF88B00CCFD5B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		08241F52205AF88B00CCFD5B /* FacultyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacultyViewController.swift; sourceTree = "<group>"; };
+		08991BF5205AFAAB0080C32D /* HeightsDirectory-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HeightsDirectory-Bridging-Header.h"; sourceTree = "<group>"; };
+		1352D1C4CCAC1CD2CE90E540 /* Pods-HeightsDirectoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeightsDirectoryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeightsDirectoryTests/Pods-HeightsDirectoryTests.release.xcconfig"; sourceTree = "<group>"; };
+		2800B3663CD9BD6CC6BB8E7B /* Pods-HeightsDirectoryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeightsDirectoryUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeightsDirectoryUITests/Pods-HeightsDirectoryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5E7E2D4EA171AFD15001483B /* Pods_HeightsDirectoryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeightsDirectoryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8292AB3C2CA4BBC0E611DE8F /* Pods-HeightsDirectoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeightsDirectoryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeightsDirectoryTests/Pods-HeightsDirectoryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8888EB86C18B69C5B36EFDFE /* Pods_HeightsDirectory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeightsDirectory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C03303D9B9A53F39A2DF707 /* Pods-HeightsDirectory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeightsDirectory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeightsDirectory/Pods-HeightsDirectory.debug.xcconfig"; sourceTree = "<group>"; };
+		B88F56A0C3F63E984CC9AB08 /* Pods-HeightsDirectory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeightsDirectory.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeightsDirectory/Pods-HeightsDirectory.release.xcconfig"; sourceTree = "<group>"; };
+		CDAB0748A016F2FCDB7BB04A /* Pods_HeightsDirectoryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeightsDirectoryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD7F2AD310FAFE2E272C37F9 /* Pods-HeightsDirectoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeightsDirectoryUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeightsDirectoryUITests/Pods-HeightsDirectoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08241EF3205AF66E00CCFD5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C1BFD1B7977D6404D0893E6 /* Pods_HeightsDirectory.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08241F07205AF67000CCFD5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428279B0F43E90837958DA86 /* Pods_HeightsDirectoryTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08241F12205AF67000CCFD5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD439491382EDF82CA635B42 /* Pods_HeightsDirectoryUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08241EED205AF66E00CCFD5B = {
+			isa = PBXGroup;
+			children = (
+				08241EF8205AF66E00CCFD5B /* HeightsDirectory */,
+				08241F0D205AF67000CCFD5B /* HeightsDirectoryTests */,
+				08241F18205AF67000CCFD5B /* HeightsDirectoryUITests */,
+				08241EF7205AF66E00CCFD5B /* Products */,
+				EED93F04750B232FC9246B9D /* Pods */,
+				BDECC4DE464ABB755CAA491B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		08241EF7205AF66E00CCFD5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08241EF6205AF66E00CCFD5B /* HeightsDirectory.app */,
+				08241F0A205AF67000CCFD5B /* HeightsDirectoryTests.xctest */,
+				08241F15205AF67000CCFD5B /* HeightsDirectoryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08241EF8205AF66E00CCFD5B /* HeightsDirectory */ = {
+			isa = PBXGroup;
+			children = (
+				08241F33205AF6DD00CCFD5B /* AppDelegate.swift */,
+				08241F46205AF78700CCFD5B /* Main.storyboard */,
+				08241F5C205AF8B200CCFD5B /* View Controllers */,
+				08241F48205AF85300CCFD5B /* Student.swift */,
+				08241F2D205AF6DC00CCFD5B /* Faculty.swift */,
+				08241F32205AF6DD00CCFD5B /* StudentStore.swift */,
+				08241F2E205AF6DC00CCFD5B /* FacultyStore.swift */,
+				08241F31205AF6DD00CCFD5B /* StudentTableViewCell.swift */,
+				08241F28205AF6DC00CCFD5B /* FacultyTableViewCell.swift */,
+				08241F42205AF72100CCFD5B /* LaunchScreen.storyboard */,
+				08241F34205AF6DD00CCFD5B /* Assets.xcassets */,
+				08241F2A205AF6DC00CCFD5B /* Info.plist */,
+				08241F29205AF6DC00CCFD5B /* GoogleService-Info.plist */,
+				08991BF5205AFAAB0080C32D /* HeightsDirectory-Bridging-Header.h */,
+			);
+			path = HeightsDirectory;
+			sourceTree = "<group>";
+		};
+		08241F0D205AF67000CCFD5B /* HeightsDirectoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				08241F0E205AF67000CCFD5B /* HeightsDirectoryTests.swift */,
+				08241F10205AF67000CCFD5B /* Info.plist */,
+			);
+			path = HeightsDirectoryTests;
+			sourceTree = "<group>";
+		};
+		08241F18205AF67000CCFD5B /* HeightsDirectoryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				08241F19205AF67000CCFD5B /* HeightsDirectoryUITests.swift */,
+				08241F1B205AF67000CCFD5B /* Info.plist */,
+			);
+			path = HeightsDirectoryUITests;
+			sourceTree = "<group>";
+		};
+		08241F5C205AF8B200CCFD5B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				08241F51205AF88B00CCFD5B /* LoginViewController.swift */,
+				08241F4E205AF88A00CCFD5B /* SignUpViewController.swift */,
+				08241F4F205AF88B00CCFD5B /* PasswordResetViewController.swift */,
+				08241F50205AF88B00CCFD5B /* StudentsViewController.swift */,
+				08241F52205AF88B00CCFD5B /* FacultyViewController.swift */,
+				08241F4C205AF88A00CCFD5B /* HandbookViewController.swift */,
+				08241F4D205AF88A00CCFD5B /* StudentDetailViewController.swift */,
+				08241F4B205AF88A00CCFD5B /* FacultyDetailViewController.swift */,
+				08241F4A205AF88A00CCFD5B /* SettingsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BDECC4DE464ABB755CAA491B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8888EB86C18B69C5B36EFDFE /* Pods_HeightsDirectory.framework */,
+				5E7E2D4EA171AFD15001483B /* Pods_HeightsDirectoryTests.framework */,
+				CDAB0748A016F2FCDB7BB04A /* Pods_HeightsDirectoryUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EED93F04750B232FC9246B9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C03303D9B9A53F39A2DF707 /* Pods-HeightsDirectory.debug.xcconfig */,
+				B88F56A0C3F63E984CC9AB08 /* Pods-HeightsDirectory.release.xcconfig */,
+				8292AB3C2CA4BBC0E611DE8F /* Pods-HeightsDirectoryTests.debug.xcconfig */,
+				1352D1C4CCAC1CD2CE90E540 /* Pods-HeightsDirectoryTests.release.xcconfig */,
+				DD7F2AD310FAFE2E272C37F9 /* Pods-HeightsDirectoryUITests.debug.xcconfig */,
+				2800B3663CD9BD6CC6BB8E7B /* Pods-HeightsDirectoryUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08241EF5205AF66E00CCFD5B /* HeightsDirectory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08241F1E205AF67000CCFD5B /* Build configuration list for PBXNativeTarget "HeightsDirectory" */;
+			buildPhases = (
+				F0FC4401182149003F427D0D /* [CP] Check Pods Manifest.lock */,
+				08241EF2205AF66E00CCFD5B /* Sources */,
+				08241EF3205AF66E00CCFD5B /* Frameworks */,
+				08241EF4205AF66E00CCFD5B /* Resources */,
+				24A957CD675B0BFFA4158564 /* [CP] Embed Pods Frameworks */,
+				616214F1D91A5835F3D5A746 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeightsDirectory;
+			productName = HeightsDirectory;
+			productReference = 08241EF6205AF66E00CCFD5B /* HeightsDirectory.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08241F09205AF67000CCFD5B /* HeightsDirectoryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08241F21205AF67000CCFD5B /* Build configuration list for PBXNativeTarget "HeightsDirectoryTests" */;
+			buildPhases = (
+				1176923394011F8678078A01 /* [CP] Check Pods Manifest.lock */,
+				08241F06205AF67000CCFD5B /* Sources */,
+				08241F07205AF67000CCFD5B /* Frameworks */,
+				08241F08205AF67000CCFD5B /* Resources */,
+				BBCF80613775A044AD22E515 /* [CP] Embed Pods Frameworks */,
+				A7672B8185B8786B313CDC9F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08241F0C205AF67000CCFD5B /* PBXTargetDependency */,
+			);
+			name = HeightsDirectoryTests;
+			productName = HeightsDirectoryTests;
+			productReference = 08241F0A205AF67000CCFD5B /* HeightsDirectoryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		08241F14205AF67000CCFD5B /* HeightsDirectoryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08241F24205AF67000CCFD5B /* Build configuration list for PBXNativeTarget "HeightsDirectoryUITests" */;
+			buildPhases = (
+				6EC1C3F77CB60DA48C0E16BD /* [CP] Check Pods Manifest.lock */,
+				08241F11205AF67000CCFD5B /* Sources */,
+				08241F12205AF67000CCFD5B /* Frameworks */,
+				08241F13205AF67000CCFD5B /* Resources */,
+				FC708FE19834AD9480DE91E4 /* [CP] Embed Pods Frameworks */,
+				D46E89518A8AA7115987E20C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08241F17205AF67000CCFD5B /* PBXTargetDependency */,
+			);
+			name = HeightsDirectoryUITests;
+			productName = HeightsDirectoryUITests;
+			productReference = 08241F15205AF67000CCFD5B /* HeightsDirectoryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08241EEE205AF66E00CCFD5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Charlie Mulholland";
+				TargetAttributes = {
+					08241EF5205AF66E00CCFD5B = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
+					08241F09205AF67000CCFD5B = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 08241EF5205AF66E00CCFD5B;
+					};
+					08241F14205AF67000CCFD5B = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 08241EF5205AF66E00CCFD5B;
+					};
+				};
+			};
+			buildConfigurationList = 08241EF1205AF66E00CCFD5B /* Build configuration list for PBXProject "HeightsDirectory" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08241EED205AF66E00CCFD5B;
+			productRefGroup = 08241EF7205AF66E00CCFD5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08241EF5205AF66E00CCFD5B /* HeightsDirectory */,
+				08241F09205AF67000CCFD5B /* HeightsDirectoryTests */,
+				08241F14205AF67000CCFD5B /* HeightsDirectoryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08241EF4205AF66E00CCFD5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08241F47205AF78800CCFD5B /* Main.storyboard in Resources */,
+				08241F37205AF6DD00CCFD5B /* Info.plist in Resources */,
+				08241F36205AF6DD00CCFD5B /* GoogleService-Info.plist in Resources */,
+				08241F43205AF72100CCFD5B /* LaunchScreen.storyboard in Resources */,
+				08241F41205AF6DD00CCFD5B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08241F08205AF67000CCFD5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08241F13205AF67000CCFD5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1176923394011F8678078A01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeightsDirectoryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24A957CD675B0BFFA4158564 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HeightsDirectory/Pods-HeightsDirectory-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Valet/Valet.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Valet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeightsDirectory/Pods-HeightsDirectory-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		616214F1D91A5835F3D5A746 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeightsDirectory/Pods-HeightsDirectory-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EC1C3F77CB60DA48C0E16BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeightsDirectoryUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7672B8185B8786B313CDC9F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeightsDirectoryTests/Pods-HeightsDirectoryTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBCF80613775A044AD22E515 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeightsDirectoryTests/Pods-HeightsDirectoryTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D46E89518A8AA7115987E20C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeightsDirectoryUITests/Pods-HeightsDirectoryUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0FC4401182149003F427D0D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeightsDirectory-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC708FE19834AD9480DE91E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeightsDirectoryUITests/Pods-HeightsDirectoryUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08241EF2205AF66E00CCFD5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08241F3A205AF6DD00CCFD5B /* Faculty.swift in Sources */,
+				08241F3E205AF6DD00CCFD5B /* StudentTableViewCell.swift in Sources */,
+				08241F35205AF6DD00CCFD5B /* FacultyTableViewCell.swift in Sources */,
+				08241F5A205AF88B00CCFD5B /* LoginViewController.swift in Sources */,
+				08241F54205AF88B00CCFD5B /* FacultyDetailViewController.swift in Sources */,
+				08241F3F205AF6DD00CCFD5B /* StudentStore.swift in Sources */,
+				08241F40205AF6DD00CCFD5B /* AppDelegate.swift in Sources */,
+				08241F57205AF88B00CCFD5B /* SignUpViewController.swift in Sources */,
+				08241F58205AF88B00CCFD5B /* PasswordResetViewController.swift in Sources */,
+				08241F49205AF85300CCFD5B /* Student.swift in Sources */,
+				08241F3B205AF6DD00CCFD5B /* FacultyStore.swift in Sources */,
+				08241F55205AF88B00CCFD5B /* HandbookViewController.swift in Sources */,
+				08241F56205AF88B00CCFD5B /* StudentDetailViewController.swift in Sources */,
+				08241F5B205AF88B00CCFD5B /* FacultyViewController.swift in Sources */,
+				08241F59205AF88B00CCFD5B /* StudentsViewController.swift in Sources */,
+				08241F53205AF88B00CCFD5B /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08241F06205AF67000CCFD5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08241F0F205AF67000CCFD5B /* HeightsDirectoryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08241F11205AF67000CCFD5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08241F1A205AF67000CCFD5B /* HeightsDirectoryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08241F0C205AF67000CCFD5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08241EF5205AF66E00CCFD5B /* HeightsDirectory */;
+			targetProxy = 08241F0B205AF67000CCFD5B /* PBXContainerItemProxy */;
+		};
+		08241F17205AF67000CCFD5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08241EF5205AF66E00CCFD5B /* HeightsDirectory */;
+			targetProxy = 08241F16205AF67000CCFD5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08241F1C205AF67000CCFD5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		08241F1D205AF67000CCFD5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08241F1F205AF67000CCFD5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C03303D9B9A53F39A2DF707 /* Pods-HeightsDirectory.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38T4963794;
+				INFOPLIST_FILE = HeightsDirectory/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cmulholland.HeightsDirectory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HeightsDirectory/HeightsDirectory-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08241F20205AF67000CCFD5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B88F56A0C3F63E984CC9AB08 /* Pods-HeightsDirectory.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38T4963794;
+				INFOPLIST_FILE = HeightsDirectory/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cmulholland.HeightsDirectory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HeightsDirectory/HeightsDirectory-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		08241F22205AF67000CCFD5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8292AB3C2CA4BBC0E611DE8F /* Pods-HeightsDirectoryTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38T4963794;
+				INFOPLIST_FILE = HeightsDirectoryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cmulholland.HeightsDirectoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeightsDirectory.app/HeightsDirectory";
+			};
+			name = Debug;
+		};
+		08241F23205AF67000CCFD5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1352D1C4CCAC1CD2CE90E540 /* Pods-HeightsDirectoryTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38T4963794;
+				INFOPLIST_FILE = HeightsDirectoryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cmulholland.HeightsDirectoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeightsDirectory.app/HeightsDirectory";
+			};
+			name = Release;
+		};
+		08241F25205AF67000CCFD5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD7F2AD310FAFE2E272C37F9 /* Pods-HeightsDirectoryUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38T4963794;
+				INFOPLIST_FILE = HeightsDirectoryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cmulholland.HeightsDirectoryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HeightsDirectory;
+			};
+			name = Debug;
+		};
+		08241F26205AF67000CCFD5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2800B3663CD9BD6CC6BB8E7B /* Pods-HeightsDirectoryUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38T4963794;
+				INFOPLIST_FILE = HeightsDirectoryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cmulholland.HeightsDirectoryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HeightsDirectory;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08241EF1205AF66E00CCFD5B /* Build configuration list for PBXProject "HeightsDirectory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08241F1C205AF67000CCFD5B /* Debug */,
+				08241F1D205AF67000CCFD5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08241F1E205AF67000CCFD5B /* Build configuration list for PBXNativeTarget "HeightsDirectory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08241F1F205AF67000CCFD5B /* Debug */,
+				08241F20205AF67000CCFD5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08241F21205AF67000CCFD5B /* Build configuration list for PBXNativeTarget "HeightsDirectoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08241F22205AF67000CCFD5B /* Debug */,
+				08241F23205AF67000CCFD5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08241F24205AF67000CCFD5B /* Build configuration list for PBXNativeTarget "HeightsDirectoryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08241F25205AF67000CCFD5B /* Debug */,
+				08241F26205AF67000CCFD5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08241EEE205AF66E00CCFD5B /* Project object */;
+}
