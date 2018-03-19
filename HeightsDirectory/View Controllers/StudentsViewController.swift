@@ -25,6 +25,7 @@ class StudentsViewController: UIViewController, UITableViewDelegate, UISearchCon
     @IBOutlet var ageLowButton: UIButton!
     @IBOutlet var sortView: UIView!
     @IBOutlet var sortViewLeadingConstraint: NSLayoutConstraint!
+    @IBOutlet var spinner: UIActivityIndicatorView!
     
     // MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -34,12 +35,14 @@ class StudentsViewController: UIViewController, UITableViewDelegate, UISearchCon
         tableView.delegate = self
         tableView.dataSource = studentStore
         
+        spinner.startAnimating()
         // Add dummy data
         studentStore.addStudent(first: "Charlie", last: "Mulholland", birth: "04/04/2002", grade: 10, zip: 20850, home: "(301)762-6106", motherName: "Becky", fatherName: "Steve", fatherPhone: "(301)807-6564", fatherEmail: "mulholland15@gmail.com", motherEmail: "mulholland4@verizon.net", motherPhone: "(301)221-4371", street: "817 Aster Blvd.", city: "Rockville MD 20850")
         studentStore.addStudent(first: "Xavier", last: "Arguello", birth: "11/14/1999", grade: 12, zip: 20816, home: "(301)320-3579", motherName: "Lourdes", fatherName: "Xavier", fatherPhone: "(240)723-0342", fatherEmail: "xavier95@hotmail.com", motherEmail: "lourdes981@yahoo.com", motherPhone: "(301)452-0458", street: "6306 Massachusetts Ave.", city: "Bethesda MD 20816")
         studentStore.addStudent(first: "Santi", last: "Arguello", birth: "03-02-2002", grade: 10, zip: 20816, home: "(301)320-3579", motherName: "Lourdes", fatherName: "Xavier", fatherPhone: "(240)723-0342", fatherEmail: "xavier95@hotmail.com", motherEmail: "lourdes981@yahoo.com", motherPhone: "(301)452-0458", street: "6306 Massachusetts Ave.", city: "Bethesda MD 20816")
         
         tableView.reloadData()
+        spinner.stopAnimating()
         
         // Configure search Controller
         self.tabBarController!.navigationController!.navigationBar.backgroundColor = redColor

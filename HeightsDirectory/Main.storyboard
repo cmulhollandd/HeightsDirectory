@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14105" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14105" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="15Q-Id-yOR">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -966,6 +966,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="jGw-1N-Ulo">
+                                <rect key="frame" x="177" y="396" width="20" height="20"/>
+                                <color key="color" red="0.7494737695" green="0.17737416850000001" blue="0.16033121110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
@@ -975,11 +979,13 @@
                             <constraint firstItem="fPd-nX-Xhx" firstAttribute="leading" secondItem="8vS-Pe-TfL" secondAttribute="leading" id="9iZ-Lu-KY6"/>
                             <constraint firstItem="fPd-nX-Xhx" firstAttribute="trailing" secondItem="8vS-Pe-TfL" secondAttribute="trailing" id="KRA-ig-tZ7"/>
                             <constraint firstItem="fPd-nX-Xhx" firstAttribute="bottom" secondItem="8vS-Pe-TfL" secondAttribute="bottom" id="R4a-9f-5Uo"/>
+                            <constraint firstItem="jGw-1N-Ulo" firstAttribute="centerX" secondItem="gGn-Z9-P2O" secondAttribute="centerX" id="UVT-Cm-Meg"/>
                             <constraint firstItem="fPd-nX-Xhx" firstAttribute="top" secondItem="8vS-Pe-TfL" secondAttribute="top" id="Xk5-Cz-y4Y"/>
                             <constraint firstItem="fPd-nX-Xhx" firstAttribute="bottom" secondItem="8vS-Pe-TfL" secondAttribute="bottom" id="Zn5-KM-dWf"/>
                             <constraint firstItem="8vS-Pe-TfL" firstAttribute="bottom" secondItem="C6B-Er-fvu" secondAttribute="bottom" constant="5" id="aCX-pt-g1Z"/>
                             <constraint firstItem="C6B-Er-fvu" firstAttribute="top" secondItem="8vS-Pe-TfL" secondAttribute="top" constant="5" id="bQK-Vv-WVb"/>
                             <constraint firstItem="fPd-nX-Xhx" firstAttribute="trailing" secondItem="8vS-Pe-TfL" secondAttribute="trailing" id="nlD-R3-msU"/>
+                            <constraint firstItem="jGw-1N-Ulo" firstAttribute="centerY" secondItem="gGn-Z9-P2O" secondAttribute="centerY" id="tpa-mH-iuq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8vS-Pe-TfL"/>
                         <connections>
@@ -995,6 +1001,7 @@
                         <outlet property="gradeButton" destination="XYd-SM-oJp" id="oab-KS-7TH"/>
                         <outlet property="sortView" destination="C6B-Er-fvu" id="14s-Vy-UYZ"/>
                         <outlet property="sortViewLeadingConstraint" destination="2Km-zl-ffD" id="Ugd-yk-1fR"/>
+                        <outlet property="spinner" destination="jGw-1N-Ulo" id="fed-tw-odv"/>
                         <outlet property="tableView" destination="fPd-nX-Xhx" id="R2B-ze-CYA"/>
                     </connections>
                 </viewController>
