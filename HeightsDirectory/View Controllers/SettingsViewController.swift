@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import LocalAuthentication
+import WebKit
 
 class SettingsViewController: UIViewController {
     // MARK: - Variables

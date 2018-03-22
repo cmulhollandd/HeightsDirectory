@@ -12,6 +12,7 @@ import Valet
 import LocalAuthentication
 
 class LoginViewController: UIViewController {
+    
     // MARK: - Variables
     let identifyer = "edu.heights.loginIdentifyer"
     let myValet = VALValet(identifier: "edu.heights.loginIdentifyer", accessibility: .afterFirstUnlockThisDeviceOnly)!
