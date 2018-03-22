@@ -81,7 +81,7 @@ class StudentsViewController: UIViewController, UITableViewDelegate, UISearchCon
         studentStore.sortList(by: .alphabet)
         
         let context = LAContext()
-        var biometry: String?
+        var biometry = "FaceID"
         if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil) {
             switch context.biometryType {
             case .faceID:
@@ -92,9 +92,8 @@ class StudentsViewController: UIViewController, UITableViewDelegate, UISearchCon
                 biometry = ""
             }
         }
-        
         if !UserDefaults.standard.bool(forKey: "ApplicationHasBeenOpened"), biometry != "" {
-            let ac = UIAlertController(title: "Login with \(biometry!)", message: nil, preferredStyle: .alert)
+            let ac = UIAlertController(title: "Login with \(biometry)", message: nil, preferredStyle: .alert)
             let yesAction = UIAlertAction(title: "Yes", style: .default) { (action) in
                 UserDefaults.standard.set(true, forKey: "ShouldAutoLoginUser")
             }

@@ -11,6 +11,8 @@ import Firebase
 import LocalAuthentication
 
 class SettingsViewController: UIViewController {
+    // MARK: - Variables
+    var biometryType = ""
     
     // MARK: - @IBOutlet
     @IBOutlet var signOutButton: UIButton!
@@ -44,11 +46,11 @@ class SettingsViewController: UIViewController {
         if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil) {
             switch context.biometryType {
             case .faceID:
-                self.switchLabel.text = "Login with faceID:"
+                self.biometryType = "faceID"
             case .touchID:
-                self.switchLabel.text = "Login with touchID:"
+                self.biometryType = "touchID"
             case .none:
-                self.switchLabel.text = "Login with touchID:"
+                self.biometryType = "touchID"
                 self.loginSwitch.isEnabled = false
             }
         }
@@ -60,6 +62,8 @@ class SettingsViewController: UIViewController {
         if UserDefaults.standard.bool(forKey: "ShouldStayLoggedIn") {
             self.stayLoggedInSwitch.isOn = true
         }
+        
+        self.switchLabel.text = "Login with \(biometryType):"
     }
     
     // MARK: - @IBAction
@@ -77,7 +81,21 @@ class SettingsViewController: UIViewController {
     
     @IBAction func switchToggled(_ sender: UISwitch) {
         if sender.isOn {
-            UserDefaults.standard.set(true, forKey: "ShouldAutoLoginUser")
+            let context = LAContext()
+            if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil) {
+                context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Give Access") { (success, error) in
+                    if success {
+                        UserDefaults.standard.set(true, forKey: "ShouldAutoLoginUser")
+                        return
+                    } else {
+                        let ac = UIAlertController(title: "\(self.biometryType) has been disabled for now", message: nil, preferredStyle: .alert)
+                        let okAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+                        ac.addAction(okAction)
+                        UserDefaults.standard.set(false, forKey: "ShouldAutoLoginUser")
+                        self.present(ac, animated: true, completion: nil)
+                    }
+                }
+            }
         } else {
             UserDefaults.standard.set(false, forKey: "ShouldAutoLoginUser")
         }

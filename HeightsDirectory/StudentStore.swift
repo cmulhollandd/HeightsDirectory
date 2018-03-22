@@ -83,7 +83,10 @@ class StudentStore: NSObject, UITableViewDataSource {
             }
         case .grade:
             shownStudents = allStudents.sorted {
-                $0.grade < $1.grade
+                if $0.grade == $1.grade {
+                    return $0.lastName < $1.lastName
+                }
+                return $0.grade < $1.grade
             }
         case .ageHigh:
             shownStudents = allStudents.sorted {

@@ -23,6 +23,7 @@ class StudentDetailViewController: UIViewController, MFMessageComposeViewControl
         df.dateFormat = "mm/dd/yyyy"
         return df
     }()
+    let redColor = UIColor(red:0.84, green:0.20, blue:0.23, alpha:1.0)
     
     // @IBOutlet
     @IBOutlet var firstNameLabel: UILabel!
@@ -39,6 +40,8 @@ class StudentDetailViewController: UIViewController, MFMessageComposeViewControl
     @IBOutlet var motherEmailButton: UIButton!
     @IBOutlet var motherPhoneButton: UIButton!
     @IBOutlet var mapView: MKMapView!
+    @IBOutlet var fatherAddContact: UIButton!
+    @IBOutlet var motherAddContact: UIButton!
     
     // MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -59,6 +62,12 @@ class StudentDetailViewController: UIViewController, MFMessageComposeViewControl
         fatherEmailButton.setTitle(student.fatherEmail, for: .normal)
         motherEmailButton.setTitle(student.motherEmail, for: .normal)
         motherPhoneButton.setTitle(student.motherPhone, for: .normal)
+        fatherAddContact.layer.borderWidth = 1.0
+        fatherAddContact.layer.cornerRadius = fatherAddContact.frame.height / 2
+        fatherAddContact.layer.borderColor = redColor.cgColor
+        motherAddContact.layer.borderWidth = 1.0
+        motherAddContact.layer.cornerRadius = motherAddContact.frame.height / 2
+        motherAddContact.layer.borderColor = redColor.cgColor
 
         setPinOnMap()
     }
@@ -108,6 +117,84 @@ class StudentDetailViewController: UIViewController, MFMessageComposeViewControl
         }
     }
     
+    @IBAction func fatherAddContactPress(_ sender: UIButton) {
+        let contact = CNMutableContact()
+        let addr = CNMutablePostalAddress()
+        let addrData = formatAddress()
+        addr.street = student.streetAddress
+        addr.city = addrData.1
+        addr.state = addrData.2
+        addr.postalCode = addrData.3
+        contact.givenName = student.fatherName
+        contact.familyName = student.lastName
+        contact.phoneNumbers = [CNLabeledValue(
+            label:CNLabelPhoneNumberMain,
+            value:CNPhoneNumber(stringValue:(student.fatherPhone)!))
+        ]
+        contact.emailAddresses = [CNLabeledValue(
+            label: CNLabelHome,
+            value: student.fatherEmail! as NSString)
+        ]
+        contact.postalAddresses = [CNLabeledValue(
+            label: CNLabelHome,
+            value: addr)
+        ]
+        let store = CNContactStore()
+        let saveRequest = CNSaveRequest()
+        saveRequest.add(contact, toContainerWithIdentifier: nil)
+        do {
+            try store.execute(saveRequest)
+        } catch {
+            print("error")
+            return
+        }
+        
+        let messageString = "\(student.fatherName) \(student.lastName) was added to contacts"
+        let ac = UIAlertController(title: "Contact Added", message: messageString, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        ac.addAction(okAction)
+        present(ac, animated: true, completion: nil)
+    }
+    
+    @IBAction func motherAddContactPress(_ sender: UIButton) {
+        let contact = CNMutableContact()
+        let addr = CNMutablePostalAddress()
+        let addrData = formatAddress()
+        addr.street = student.streetAddress
+        addr.city = addrData.1
+        addr.state = addrData.2
+        addr.postalCode = addrData.3
+        contact.givenName = student.motherName
+        contact.familyName = student.lastName
+        contact.phoneNumbers = [CNLabeledValue(
+            label:CNLabelPhoneNumberMain,
+            value:CNPhoneNumber(stringValue:(student.motherPhone)!))
+        ]
+        contact.emailAddresses = [CNLabeledValue(
+            label: CNLabelHome,
+            value: student.motherEmail! as NSString)
+        ]
+        contact.postalAddresses = [CNLabeledValue(
+            label: CNLabelHome,
+            value: addr)
+        ]
+        let store = CNContactStore()
+        let saveRequest = CNSaveRequest()
+        saveRequest.add(contact, toContainerWithIdentifier: nil)
+        do {
+            try store.execute(saveRequest)
+        } catch {
+            print("error")
+            return
+        }
+        
+        let messageString = "\(student.motherName) \(student.lastName) was added to contacts"
+        let ac = UIAlertController(title: "Contact Added", message: messageString, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        ac.addAction(okAction)
+        present(ac, animated: true, completion: nil)
+    }
+    
     @IBAction func mapTapped(_ sender: UITapGestureRecognizer) {
         let longitude = addrLon
         let latitude = addrLat
@@ -148,6 +235,16 @@ class StudentDetailViewController: UIViewController, MFMessageComposeViewControl
             self.mapView.setRegion(region, animated: true) 
             self.mapView.addAnnotation(annotation)
         }
+    }
+    
+    func formatAddress() -> (String, String, String, String) {
+        var results = (student.streetAddress, "", "", "")
+        let addrElements = student.cityAddress.split(separator: " ")
+        results.1 = String(addrElements[0])
+        results.2 = String(addrElements[1])
+        results.3 = String(addrElements[2])
+        print(results)
+        return results
     }
     
     // MARK: - Message delegate methods

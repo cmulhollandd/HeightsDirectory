@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14105" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="15Q-Id-yOR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14105" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -443,7 +443,7 @@
                                 <rect key="frame" x="0.0" y="140" width="375" height="589"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FacultyTableViewCell" rowHeight="64" id="4wn-z8-WK5" customClass="FacultyTableViewCell" customModule="HeightsDirectory" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FacultyTableViewCell" rowHeight="64" id="4wn-z8-WK5" customClass="FacultyTableViewCell" customModule="HeightsDirectory" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4wn-z8-WK5" id="hrZ-vV-gEw">
@@ -1054,7 +1054,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fm-gf-buC">
-                                                <rect key="frame" x="8" y="157" width="90.666666666666671" height="60"/>
+                                                <rect key="frame" x="8" y="157" width="91" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="J0Q-tf-uVg"/>
                                                 </constraints>
@@ -1063,7 +1063,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygc-PG-o0L">
-                                                <rect key="frame" x="21.000000000000007" y="225.66666666666669" width="116.66666666666669" height="20.333333333333343"/>
+                                                <rect key="frame" x="21" y="226" width="117" height="20"/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1080,12 +1080,12 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIj-Pp-QXG">
-                                                <rect key="frame" x="21" y="332.66666666666669" width="103" height="21"/>
+                                                <rect key="frame" x="21" y="332" width="103" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIc-rD-0lz">
-                                                <rect key="frame" x="40" y="361.66666666666669" width="96" height="33"/>
+                                                <rect key="frame" x="40" y="361" width="96" height="33"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="home phone">
                                                     <color key="titleColor" red="0.7494737695" green="0.17737416850000001" blue="0.16033121110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1095,12 +1095,12 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Father's email &amp; phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvf-ke-eL8">
-                                                <rect key="frame" x="21" y="422.66666666666663" width="177" height="21"/>
+                                                <rect key="frame" x="21" y="422" width="177" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DlN-B8-Sjk">
-                                                <rect key="frame" x="40" y="451.66666666666663" width="91" height="33"/>
+                                                <rect key="frame" x="40" y="451" width="91" height="33"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="father email">
                                                     <color key="titleColor" red="0.7494737695" green="0.17737416850000001" blue="0.16033121110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1110,7 +1110,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diB-Tc-ZDT">
-                                                <rect key="frame" x="40" y="492.66666666666663" width="98" height="33"/>
+                                                <rect key="frame" x="40" y="492" width="98" height="33"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="father phone">
                                                     <color key="titleColor" red="0.7494737695" green="0.17737416850000001" blue="0.16033121110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1120,7 +1120,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mother's email &amp; phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tC7-Sn-B6L">
-                                                <rect key="frame" x="21" y="553.66666666666663" width="184" height="21"/>
+                                                <rect key="frame" x="21" y="553" width="184" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1131,7 +1131,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ye-fo-nVD">
-                                                <rect key="frame" x="40" y="582.66666666666663" width="100" height="33"/>
+                                                <rect key="frame" x="40" y="582" width="100" height="33"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="mother email">
                                                     <color key="titleColor" red="0.7494737695" green="0.17737416850000001" blue="0.16033121110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1141,13 +1141,37 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9x-ns-j6U">
-                                                <rect key="frame" x="40" y="623.66666666666663" width="108" height="33"/>
+                                                <rect key="frame" x="40" y="623" width="108" height="33"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="mother phone">
                                                     <color key="titleColor" red="0.7494737695" green="0.17737416850000001" blue="0.16033121110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="motherPhoneButtonPressed:" destination="Ylq-Cb-Dgz" eventType="touchUpInside" id="hSl-Pc-5Xq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owC-h0-mkx">
+                                                <rect key="frame" x="260" y="417" width="95" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="95" id="pw8-mv-fdy"/>
+                                                </constraints>
+                                                <state key="normal" title="Add Contact">
+                                                    <color key="titleColor" red="0.7494737695" green="0.17737416850000001" blue="0.16033121110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="fatherAddContactPress:" destination="Ylq-Cb-Dgz" eventType="touchUpInside" id="Sko-0D-5kf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxz-XI-J8r">
+                                                <rect key="frame" x="260" y="549" width="95" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="95" id="jV6-i7-I21"/>
+                                                </constraints>
+                                                <state key="normal" title="Add Contact">
+                                                    <color key="titleColor" red="0.7494737695" green="0.17737416850000001" blue="0.16033121110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="motherAddContactPress:" destination="Ylq-Cb-Dgz" eventType="touchUpInside" id="gEr-59-Usc"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1169,9 +1193,11 @@
                                             <constraint firstItem="tC7-Sn-B6L" firstAttribute="top" secondItem="diB-Tc-ZDT" secondAttribute="bottom" constant="28" id="Ff3-Fd-XIF"/>
                                             <constraint firstItem="6ye-fo-nVD" firstAttribute="top" secondItem="tC7-Sn-B6L" secondAttribute="bottom" constant="8" id="Gfe-qF-AMx"/>
                                             <constraint firstItem="4Fm-gf-buC" firstAttribute="leading" secondItem="Puj-5P-p0d" secondAttribute="leading" constant="8" id="HKp-ih-dZK"/>
+                                            <constraint firstAttribute="trailing" secondItem="fxz-XI-J8r" secondAttribute="trailing" constant="20" id="HQA-fD-APN"/>
                                             <constraint firstAttribute="trailing" secondItem="gON-0q-41n" secondAttribute="trailing" constant="21" id="HvH-lV-dZ6"/>
                                             <constraint firstItem="tC7-Sn-B6L" firstAttribute="leading" secondItem="Puj-5P-p0d" secondAttribute="leading" constant="21" id="KkJ-VP-i1G"/>
                                             <constraint firstItem="DlN-B8-Sjk" firstAttribute="top" secondItem="fvf-ke-eL8" secondAttribute="bottom" constant="8" id="L0J-XR-Y2K"/>
+                                            <constraint firstItem="fxz-XI-J8r" firstAttribute="centerY" secondItem="tC7-Sn-B6L" secondAttribute="centerY" id="MGQ-FN-sic"/>
                                             <constraint firstItem="fvf-ke-eL8" firstAttribute="leading" secondItem="Puj-5P-p0d" secondAttribute="leading" constant="21" id="O2M-qB-UUX"/>
                                             <constraint firstItem="DlN-B8-Sjk" firstAttribute="leading" secondItem="OFk-G3-7nq" secondAttribute="leading" id="Obg-rW-rdU"/>
                                             <constraint firstItem="OFk-G3-7nq" firstAttribute="top" secondItem="ygc-PG-o0L" secondAttribute="bottom" constant="8" id="PlP-Rw-0Cq"/>
@@ -1185,15 +1211,18 @@
                                             <constraint firstItem="DIj-Pp-QXG" firstAttribute="top" secondItem="0Rr-c5-fq6" secondAttribute="bottom" constant="28" id="bTm-hR-Aow"/>
                                             <constraint firstItem="ygc-PG-o0L" firstAttribute="leading" secondItem="Puj-5P-p0d" secondAttribute="leading" constant="21" id="bdZ-qq-ZeY"/>
                                             <constraint firstItem="0Rr-c5-fq6" firstAttribute="leading" secondItem="OFk-G3-7nq" secondAttribute="leading" id="dS0-Hj-vP4"/>
+                                            <constraint firstItem="owC-h0-mkx" firstAttribute="centerY" secondItem="fvf-ke-eL8" secondAttribute="centerY" id="daq-4u-wSi"/>
                                             <constraint firstAttribute="trailing" secondItem="hJt-Uj-Ker" secondAttribute="trailing" constant="21" id="dvo-8c-Gpb"/>
                                             <constraint firstItem="tC7-Sn-B6L" firstAttribute="leading" secondItem="ygc-PG-o0L" secondAttribute="leading" id="eWU-zQ-IAx"/>
                                             <constraint firstItem="diB-Tc-ZDT" firstAttribute="top" secondItem="DlN-B8-Sjk" secondAttribute="bottom" constant="8" id="eXs-MH-PAA"/>
                                             <constraint firstItem="0Rr-c5-fq6" firstAttribute="leading" secondItem="Puj-5P-p0d" secondAttribute="leading" constant="40" id="eu6-f5-baq"/>
+                                            <constraint firstItem="owC-h0-mkx" firstAttribute="centerY" secondItem="fvf-ke-eL8" secondAttribute="centerY" id="g4n-Xe-m8W"/>
                                             <constraint firstItem="4Fm-gf-buC" firstAttribute="top" secondItem="IqP-rq-VEo" secondAttribute="bottom" constant="35" id="g9n-SB-vZ6"/>
                                             <constraint firstItem="t4B-4T-vpx" firstAttribute="top" secondItem="IqP-rq-VEo" secondAttribute="bottom" constant="35" id="gtG-iD-Dgp"/>
                                             <constraint firstItem="QIc-rD-0lz" firstAttribute="leading" secondItem="Puj-5P-p0d" secondAttribute="leading" constant="40" id="ihJ-wD-2KH"/>
                                             <constraint firstItem="DIj-Pp-QXG" firstAttribute="leading" secondItem="Puj-5P-p0d" secondAttribute="leading" constant="21" id="jqM-yd-Rjk"/>
                                             <constraint firstItem="hJt-Uj-Ker" firstAttribute="leading" secondItem="Puj-5P-p0d" secondAttribute="leading" constant="21" id="pgd-In-SNJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="owC-h0-mkx" secondAttribute="trailing" constant="20" id="pr7-Hb-tpI"/>
                                             <constraint firstAttribute="bottom" secondItem="gON-0q-41n" secondAttribute="bottom" constant="21" id="wK2-xD-xLV"/>
                                             <constraint firstItem="IqP-rq-VEo" firstAttribute="top" secondItem="hJt-Uj-Ker" secondAttribute="bottom" constant="8" id="x0E-Bg-tAs"/>
                                             <constraint firstItem="6ye-fo-nVD" firstAttribute="leading" secondItem="OFk-G3-7nq" secondAttribute="leading" id="x2p-YJ-DTq"/>
@@ -1229,6 +1258,7 @@
                     <connections>
                         <outlet property="birthdayLabel" destination="4Fm-gf-buC" id="ELg-HQ-IA2"/>
                         <outlet property="cityAddrLabel" destination="0Rr-c5-fq6" id="KWp-3c-1wL"/>
+                        <outlet property="fatherAddContact" destination="owC-h0-mkx" id="fDD-2p-nf8"/>
                         <outlet property="fatherEmailButton" destination="DlN-B8-Sjk" id="Snd-wh-anU"/>
                         <outlet property="fatherInfoLabel" destination="fvf-ke-eL8" id="Poo-It-SNh"/>
                         <outlet property="fatherPhoneButton" destination="diB-Tc-ZDT" id="zx7-f7-6sy"/>
@@ -1237,6 +1267,7 @@
                         <outlet property="homePhoneButton" destination="QIc-rD-0lz" id="awc-gR-sN8"/>
                         <outlet property="lastNameLabel" destination="IqP-rq-VEo" id="KMq-Lh-NAR"/>
                         <outlet property="mapView" destination="gON-0q-41n" id="tK2-0C-Cdd"/>
+                        <outlet property="motherAddContact" destination="fxz-XI-J8r" id="guE-Ka-lzz"/>
                         <outlet property="motherEmailButton" destination="6ye-fo-nVD" id="w1x-8I-3Ed"/>
                         <outlet property="motherInfoLabel" destination="tC7-Sn-B6L" id="ZJ4-l1-oLa"/>
                         <outlet property="motherPhoneButton" destination="W9x-ns-j6U" id="g2w-1w-rFo"/>
@@ -1250,7 +1281,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="4055" y="-103"/>
+            <point key="canvasLocation" x="3293.5" y="-177.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ruz-ux-Rfy">

@@ -32,6 +32,7 @@ class LoginViewController: UIViewController {
             self.performSegue(withIdentifier: "loginCompleted", sender: nil)
         }
         
+        // Try and login with touchID or faceID
         if UserDefaults.standard.bool(forKey: "ShouldAutoLoginUser") {
             tryAutoLogin()
         }
