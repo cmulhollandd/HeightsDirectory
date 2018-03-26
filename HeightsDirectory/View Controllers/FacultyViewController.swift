@@ -23,8 +23,6 @@ class FacultyViewController: UIViewController, UITableViewDelegate, UISearchBarD
         
         self.tabBarController!.navigationItem.title = "Faculty"
         self.tabBarController!.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
-        self.tabBarController!.navigationController!.navigationBar.prefersLargeTitles = true
-        
         self.tabBarController!.navigationItem.searchController = self.searchController
         
     }
@@ -47,6 +45,8 @@ class FacultyViewController: UIViewController, UITableViewDelegate, UISearchBarD
         textField!.textColor = UIColor.white
         searchController.searchBar.delegate = self
         self.tabBarController!.navigationItem.searchController = self.searchController
+        
+        self.navigationItem.largeTitleDisplayMode = .always
     }
     
     

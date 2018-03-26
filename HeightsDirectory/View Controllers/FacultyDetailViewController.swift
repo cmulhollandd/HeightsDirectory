@@ -28,8 +28,7 @@ class FacultyDetailViewController: UIViewController, MFMailComposeViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.prefersLargeTitles = false
-        
+        self.navigationItem.largeTitleDisplayMode = .never
         lastNameLabel.text = faculty.lastName
         firstNameLabel.text = faculty.firstName
         titleLabel.text = faculty.title

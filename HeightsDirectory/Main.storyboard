@@ -1258,6 +1258,7 @@
                     <connections>
                         <outlet property="birthdayLabel" destination="4Fm-gf-buC" id="ELg-HQ-IA2"/>
                         <outlet property="cityAddrLabel" destination="0Rr-c5-fq6" id="KWp-3c-1wL"/>
+                        <outlet property="contentView" destination="Puj-5P-p0d" id="MCl-iE-3df"/>
                         <outlet property="fatherAddContact" destination="owC-h0-mkx" id="fDD-2p-nf8"/>
                         <outlet property="fatherEmailButton" destination="DlN-B8-Sjk" id="Snd-wh-anU"/>
                         <outlet property="fatherInfoLabel" destination="fvf-ke-eL8" id="Poo-It-SNh"/>

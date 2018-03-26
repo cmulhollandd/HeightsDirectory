@@ -34,6 +34,7 @@ class HandbookViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        self.tabBarController!.navigationItem.title = "Handbook"
         self.tabBarController?.navigationItem.searchController = nil
     }
     

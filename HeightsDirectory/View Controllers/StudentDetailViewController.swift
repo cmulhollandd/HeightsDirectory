@@ -26,6 +26,7 @@ class StudentDetailViewController: UIViewController, MFMessageComposeViewControl
     let redColor = UIColor(red:0.84, green:0.20, blue:0.23, alpha:1.0)
     
     // @IBOutlet
+    @IBOutlet var contentView: UIView!
     @IBOutlet var firstNameLabel: UILabel!
     @IBOutlet var lastNameLabel: UILabel!
     @IBOutlet var gradeLabel: UILabel!
@@ -48,7 +49,7 @@ class StudentDetailViewController: UIViewController, MFMessageComposeViewControl
         super.viewDidLoad()
         
         mapView.layer.cornerRadius = mapView.frame.height / 10
-        self.navigationController?.navigationBar.prefersLargeTitles = false
+        self.navigationItem.largeTitleDisplayMode = .never
         firstNameLabel.text = student.firstName
         lastNameLabel.text = student.lastName
         gradeLabel.text = "\(student.grade)"
@@ -232,6 +233,7 @@ class StudentDetailViewController: UIViewController, MFMessageComposeViewControl
             let latitudinalMeters: CLLocationDistance = 200000
             let longitudinalMeters: CLLocationDistance = 200000
             let region = MKCoordinateRegionMakeWithDistance(coordinate, latitudinalMeters, longitudinalMeters)
+            self.mapView.centerCoordinate = location.coordinate
             self.mapView.setRegion(region, animated: true) 
             self.mapView.addAnnotation(annotation)
         }

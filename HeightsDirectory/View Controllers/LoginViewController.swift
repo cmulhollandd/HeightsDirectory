@@ -28,6 +28,7 @@ class LoginViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        
         // Try and login the user from saved values
         if UserDefaults.standard.bool(forKey: "ShouldStayLoggedIn") {
             self.performSegue(withIdentifier: "loginCompleted", sender: nil)
@@ -44,28 +45,23 @@ class LoginViewController: UIViewController {
         
         loginErrorLabel.alpha = 0.0
         loginButton.layer.cornerRadius = loginButton.frame.height / 2
-        
     }
     
     // MARK: - @IBAction
     @IBAction func loginButtonPress(_ sender: UIButton) {
-        print("\(#function)")
         tryLogin(nil)
     }
     
     @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
-        print("\(#function)")
         view.endEditing(true)
         view.endEditing(true)
     }
     
     @IBAction func emailDidReturn(_ sender: UITextField) {
-        print("\(#function)")
         passwordField.becomeFirstResponder()
     }
     
     @IBAction func passwordDidReturn(_ sender: UITextField) {
-        print("\(#function)")
         passwordField.resignFirstResponder()
         tryLogin(nil)
     }
@@ -73,7 +69,6 @@ class LoginViewController: UIViewController {
     
     // MARK: - Methods
     func tryLogin(_ sender: UIButton?) {
-        print("\(#function)")
         view.endEditing(true)
         if emailField.text! != "" {
             if passwordField.text! != "" {

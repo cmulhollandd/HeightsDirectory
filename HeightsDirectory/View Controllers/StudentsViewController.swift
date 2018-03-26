@@ -44,6 +44,7 @@ class StudentsViewController: UIViewController, UITableViewDelegate, UISearchCon
         tableView.reloadData()
         spinner.stopAnimating()
         
+        self.navigationItem.largeTitleDisplayMode = .always
         // Configure search Controller
         self.tabBarController!.navigationController!.navigationBar.backgroundColor = redColor
         searchController.delegate = self
@@ -111,7 +112,6 @@ class StudentsViewController: UIViewController, UITableViewDelegate, UISearchCon
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        self.tabBarController!.navigationController?.navigationBar.prefersLargeTitles = true
         self.tabBarController!.navigationItem.title = "Students"
         self.tabBarController!.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
         
