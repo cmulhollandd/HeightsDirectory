@@ -71,5 +71,5 @@ class Student {
         
         self.init(last: last, first: first, birthDate: birth, grade: grade, zip: zip, homePhone: home, motherName: momName, fatherName: dadName, fatherPhone: dadPhone, fatherEmail: dadEmail, motherEmail: momEmail, motherPhone: momPhone, streetAddr: street, cityAddr: city)
     }
-
+    
 }

@@ -24,6 +24,12 @@ enum StudentRefineOptions {
 
 class StudentStore: NSObject, UITableViewDataSource {
     
+    let df: DateFormatter = {
+        let df = DateFormatter()
+        df.dateFormat = "MM/DD/YYYY"
+        return df
+    }()
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return shownStudents.count
     }
@@ -48,12 +54,11 @@ class StudentStore: NSObject, UITableViewDataSource {
     var currentSortment = StudentSortOptions.grade
     
     // MARK: - Functions
-    func addStudent(first: String, last: String, birth: String, grade: Int, zip: Int,home: String, motherName: String, fatherName: String, fatherPhone: String?, fatherEmail: String?, motherEmail: String?, motherPhone: String?, street: String, city: String) {
+    func addStudent(first: String, last: String, birth: String, grade: Int, zip: Int, home: String, motherName: String, fatherName: String, fatherPhone: String?, fatherEmail: String?, motherEmail: String?, motherPhone: String?, street: String, city: String) {
         
         let newStudent = Student(last: last, first: first, birthDate: birth, grade: grade, zip: zip, homePhone: home, motherName: motherName, fatherName: fatherName, fatherPhone: fatherPhone, fatherEmail: fatherEmail, motherEmail: motherEmail, motherPhone: motherPhone, streetAddr: street, cityAddr: city)
         
         allStudents.append(newStudent)
-        
         shownStudents.append(newStudent)
         
         sortList(by: currentSortment)
@@ -62,13 +67,13 @@ class StudentStore: NSObject, UITableViewDataSource {
     
     func addStudent(from json: Dictionary<String, Any>) {
         let newStudent = Student(from: json)
-        
+
         allStudents.append(newStudent)
-        
+
         shownStudents.append(newStudent)
-        
+
         sortList(by: currentSortment)
-        
+
     }
     
     // Sort students by a SortOption

@@ -41,13 +41,26 @@ class FacultyDetailViewController: UIViewController, MFMailComposeViewController
     
     // MARK: - @IBActions
     @IBAction func phoneButtonPressed(_ sender: UIButton) {
-        if let url = URL(string: sender.titleLabel!.text!) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        print("\(sender.titleLabel!.text!)")
+        if let url = URL(string: "tel://\(sender.titleLabel!.text!)") {
+            if UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url, options: [:], completionHandler: {
+                    (success) -> Void in
+                    if success {
+                        print("Opened \(url)")
+                    } else {
+                        print("Didn't open \(url)")
+                    }
+                })
+            } else {
+                print("Couldn't open \(url)")
+            }
         } else {
+            print("Phone number wasn't valid")
             // notify the user that the phone number isn't valid
             let ac = UIAlertController(title: "Invalid Phone Number", message: "this phone number could not be found", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-            let contactAction = UIAlertAction(title: "Contact Us", style: .default, handler: {
+            let contactAction = UIAlertAction(title: "Report", style: .default, handler: {
                 (action) -> Void in
                 
                 let mc = MFMailComposeViewController()

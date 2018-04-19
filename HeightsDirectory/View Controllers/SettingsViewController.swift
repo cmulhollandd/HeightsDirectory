@@ -21,7 +21,7 @@ class SettingsViewController: UIViewController {
     @IBOutlet var newEmailField: UITextField!
     @IBOutlet var errorMessageLabel: UILabel!
     @IBOutlet var newPasswordButton: UIButton!
-    @IBOutlet var loginSwitch: UISwitch!
+    @IBOutlet var biometricSwitch: UISwitch!
     @IBOutlet var switchLabel: UILabel!
     @IBOutlet var stayLoggedInSwitch: UISwitch!
     
@@ -52,12 +52,12 @@ class SettingsViewController: UIViewController {
                 self.biometryType = "touchID"
             case .none:
                 self.biometryType = "touchID"
-                self.loginSwitch.isEnabled = false
+                self.biometricSwitch.isEnabled = false
             }
         }
         
         if UserDefaults.standard.bool(forKey: "ShouldAutoLoginUser") {
-            self.loginSwitch.isOn = true
+            self.biometricSwitch.isOn = true
         }
         
         if UserDefaults.standard.bool(forKey: "ShouldStayLoggedIn") {
@@ -75,6 +75,8 @@ class SettingsViewController: UIViewController {
     @IBAction func stayLoggedInSwitch(_ sender: UISwitch) {
         if sender.isOn {
             UserDefaults.standard.set(true, forKey: "ShouldStayLoggedIn")
+            UserDefaults.standard.set(false, forKey: "ShouldAutoLoginUser")
+            biometricSwitch.isOn = false
         } else {
             UserDefaults.standard.set(false, forKey: "ShouldStayLoggedIn")
         }

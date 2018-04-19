@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08176FAD2066F602002CA5D4 /* DetailViewPicture.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 08176FAC2066F602002CA5D4 /* DetailViewPicture.jpeg */; };
-		08176FAF2066F658002CA5D4 /* SwipeGesture.GIF in Resources */ = {isa = PBXBuildFile; fileRef = 08176FAE2066F658002CA5D4 /* SwipeGesture.GIF */; };
+		0805B90F2082B70600082B78 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0805B90E2082B70600082B78 /* Student.swift */; };
+		0805B9112082B72E00082B78 /* Faculty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0805B9102082B72E00082B78 /* Faculty.swift */; };
+		0805B9132086A4C300082B78 /* TipJarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0805B9122086A4C300082B78 /* TipJarViewController.swift */; };
 		08241F0F205AF67000CCFD5B /* HeightsDirectoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F0E205AF67000CCFD5B /* HeightsDirectoryTests.swift */; };
 		08241F1A205AF67000CCFD5B /* HeightsDirectoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F19205AF67000CCFD5B /* HeightsDirectoryUITests.swift */; };
 		08241F35205AF6DD00CCFD5B /* FacultyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F28205AF6DC00CCFD5B /* FacultyTableViewCell.swift */; };
-		08241F3A205AF6DD00CCFD5B /* Faculty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F2D205AF6DC00CCFD5B /* Faculty.swift */; };
 		08241F3B205AF6DD00CCFD5B /* FacultyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F2E205AF6DC00CCFD5B /* FacultyStore.swift */; };
 		08241F3E205AF6DD00CCFD5B /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F31205AF6DD00CCFD5B /* StudentTableViewCell.swift */; };
 		08241F3F205AF6DD00CCFD5B /* StudentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F32205AF6DD00CCFD5B /* StudentStore.swift */; };
@@ -20,7 +20,6 @@
 		08241F41205AF6DD00CCFD5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08241F34205AF6DD00CCFD5B /* Assets.xcassets */; };
 		08241F43205AF72100CCFD5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08241F42205AF72100CCFD5B /* LaunchScreen.storyboard */; };
 		08241F47205AF78800CCFD5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08241F46205AF78700CCFD5B /* Main.storyboard */; };
-		08241F49205AF85300CCFD5B /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F48205AF85300CCFD5B /* Student.swift */; };
 		08241F53205AF88B00CCFD5B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F4A205AF88A00CCFD5B /* SettingsViewController.swift */; };
 		08241F54205AF88B00CCFD5B /* FacultyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F4B205AF88A00CCFD5B /* FacultyDetailViewController.swift */; };
 		08241F55205AF88B00CCFD5B /* HandbookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08241F4C205AF88A00CCFD5B /* HandbookViewController.swift */; };
@@ -54,8 +53,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08176FAC2066F602002CA5D4 /* DetailViewPicture.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DetailViewPicture.jpeg; sourceTree = "<group>"; };
-		08176FAE2066F658002CA5D4 /* SwipeGesture.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SwipeGesture.GIF; sourceTree = "<group>"; };
+		0805B90E2082B70600082B78 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		0805B9102082B72E00082B78 /* Faculty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faculty.swift; sourceTree = "<group>"; };
+		0805B9122086A4C300082B78 /* TipJarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipJarViewController.swift; sourceTree = "<group>"; };
 		08241EF6205AF66E00CCFD5B /* HeightsDirectory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeightsDirectory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08241F0A205AF67000CCFD5B /* HeightsDirectoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeightsDirectoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08241F0E205AF67000CCFD5B /* HeightsDirectoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightsDirectoryTests.swift; sourceTree = "<group>"; };
@@ -65,7 +65,6 @@
 		08241F1B205AF67000CCFD5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08241F28205AF6DC00CCFD5B /* FacultyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacultyTableViewCell.swift; sourceTree = "<group>"; };
 		08241F2A205AF6DC00CCFD5B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		08241F2D205AF6DC00CCFD5B /* Faculty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Faculty.swift; sourceTree = "<group>"; };
 		08241F2E205AF6DC00CCFD5B /* FacultyStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacultyStore.swift; sourceTree = "<group>"; };
 		08241F31205AF6DD00CCFD5B /* StudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		08241F32205AF6DD00CCFD5B /* StudentStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentStore.swift; sourceTree = "<group>"; };
@@ -73,7 +72,6 @@
 		08241F34205AF6DD00CCFD5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08241F42205AF72100CCFD5B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08241F46205AF78700CCFD5B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		08241F48205AF85300CCFD5B /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		08241F4A205AF88A00CCFD5B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		08241F4B205AF88A00CCFD5B /* FacultyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacultyDetailViewController.swift; sourceTree = "<group>"; };
 		08241F4C205AF88A00CCFD5B /* HandbookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandbookViewController.swift; sourceTree = "<group>"; };
@@ -150,15 +148,13 @@
 			children = (
 				08241F33205AF6DD00CCFD5B /* AppDelegate.swift */,
 				08241F5C205AF8B200CCFD5B /* View Controllers */,
-				08241F48205AF85300CCFD5B /* Student.swift */,
 				08241F46205AF78700CCFD5B /* Main.storyboard */,
-				08241F2D205AF6DC00CCFD5B /* Faculty.swift */,
+				0805B90E2082B70600082B78 /* Student.swift */,
+				0805B9102082B72E00082B78 /* Faculty.swift */,
 				08241F32205AF6DD00CCFD5B /* StudentStore.swift */,
 				08241F2E205AF6DC00CCFD5B /* FacultyStore.swift */,
 				08241F31205AF6DD00CCFD5B /* StudentTableViewCell.swift */,
 				08241F28205AF6DC00CCFD5B /* FacultyTableViewCell.swift */,
-				08176FAC2066F602002CA5D4 /* DetailViewPicture.jpeg */,
-				08176FAE2066F658002CA5D4 /* SwipeGesture.GIF */,
 				08241F42205AF72100CCFD5B /* LaunchScreen.storyboard */,
 				08241F34205AF6DD00CCFD5B /* Assets.xcassets */,
 				08241F2A205AF6DC00CCFD5B /* Info.plist */,
@@ -197,6 +193,7 @@
 				08241F4D205AF88A00CCFD5B /* StudentDetailViewController.swift */,
 				08241F4B205AF88A00CCFD5B /* FacultyDetailViewController.swift */,
 				08241F4A205AF88A00CCFD5B /* SettingsViewController.swift */,
+				0805B9122086A4C300082B78 /* TipJarViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -338,9 +335,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08176FAF2066F658002CA5D4 /* SwipeGesture.GIF in Resources */,
 				089816062062FEAF001ADD14 /* GoogleService-Info.plist in Resources */,
-				08176FAD2066F602002CA5D4 /* DetailViewPicture.jpeg in Resources */,
 				08241F47205AF78800CCFD5B /* Main.storyboard in Resources */,
 				08241F43205AF72100CCFD5B /* LaunchScreen.storyboard in Resources */,
 				08241F41205AF6DD00CCFD5B /* Assets.xcassets in Resources */,
@@ -526,21 +521,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08241F3A205AF6DD00CCFD5B /* Faculty.swift in Sources */,
+				0805B9112082B72E00082B78 /* Faculty.swift in Sources */,
 				08241F3E205AF6DD00CCFD5B /* StudentTableViewCell.swift in Sources */,
 				08241F35205AF6DD00CCFD5B /* FacultyTableViewCell.swift in Sources */,
 				08241F5A205AF88B00CCFD5B /* LoginViewController.swift in Sources */,
+				0805B9132086A4C300082B78 /* TipJarViewController.swift in Sources */,
 				08241F54205AF88B00CCFD5B /* FacultyDetailViewController.swift in Sources */,
 				08241F3F205AF6DD00CCFD5B /* StudentStore.swift in Sources */,
 				08241F40205AF6DD00CCFD5B /* AppDelegate.swift in Sources */,
 				08241F57205AF88B00CCFD5B /* SignUpViewController.swift in Sources */,
 				08241F58205AF88B00CCFD5B /* PasswordResetViewController.swift in Sources */,
-				08241F49205AF85300CCFD5B /* Student.swift in Sources */,
 				08241F3B205AF6DD00CCFD5B /* FacultyStore.swift in Sources */,
 				08241F55205AF88B00CCFD5B /* HandbookViewController.swift in Sources */,
 				08241F56205AF88B00CCFD5B /* StudentDetailViewController.swift in Sources */,
 				08241F5B205AF88B00CCFD5B /* FacultyViewController.swift in Sources */,
 				08241F59205AF88B00CCFD5B /* StudentsViewController.swift in Sources */,
+				0805B90F2082B70600082B78 /* Student.swift in Sources */,
 				08241F53205AF88B00CCFD5B /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
