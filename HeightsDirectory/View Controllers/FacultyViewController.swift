@@ -25,6 +25,7 @@ class FacultyViewController: UIViewController, UITableViewDelegate, UISearchBarD
         self.tabBarController!.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
         self.tabBarController!.navigationItem.searchController = self.searchController
         
+        self.navigationItem.largeTitleDisplayMode = .always
     }
     
     override func viewDidLoad() {
